@@ -18,7 +18,7 @@
         fill="rgba(0,0,0,.0)"
         @mousedown="dragStart(i)"
       ></circle> 
-    </svg>
+    </svg> 
 
 
     <input class="rng__height" type="range" @input="rngHeight" v-model:value="rngRoadHeight" step=".01" min=".1" max="50">
