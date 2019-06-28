@@ -45,7 +45,7 @@ export default {
         width: 400px;
         height: 400px;
     }
-    input[type=range] {
+    input[type=range] { 
         position: absolute;
         top: 70px;
     }
