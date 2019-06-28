@@ -61,7 +61,7 @@ export default {
     dragStop() {
       this.$emit('dragStop')
     }
-  }
+  }  
 };
 </script>
 
