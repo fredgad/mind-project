@@ -1,19 +1,31 @@
 <template>
     <div id="wrapper">
 
-        <input type="range" :value="props.ages" min="18" max="65" step="1">
+        <input id='rng' type="range" :value="props.ages" min="18" max="65" step="1" @input="rngChange">
         <svg id="cont">
-            <polygon points="200,10 250,190 160,210" fill="#000" stroke="brown"
+            <polygon :points="props.polyPath" fill="rgba(99,99,9,.5)" stroke="brown" stroke-width="4"/>
         </svg>
-
-
+ 
+        <input type="number" id="inp" :value="props.ages" @input="inpChange">
+        <!-- <div class="sd">{{ props.polyPath }}</div> -->
     </div>
 </template>
 
 <script>
 export default {
     name: 'BrainPossibilities',
-    props: ['props']
+    props: ['props'],
+    methods: {
+        rngChange() {
+            this.$emit('rngChange',  rng.value)
+        },
+        inpChange() {
+            if(inp.value > 65) {
+                inp.value = 65
+            }
+            this.$emit('rngChange',  inp.value)
+        }
+    }
 }
 </script>
 
@@ -27,7 +39,7 @@ export default {
     min-height: 400px;
 
     #cont {
-        border: 2px solid red;
+        border: 1px solid silver;
         position: relative;
         width: 95vw;
         width: 400px;
