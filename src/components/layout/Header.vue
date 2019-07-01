@@ -5,6 +5,7 @@
             <router-link to="/home">Характерристики мозга на разных этапах жизни человека</router-link>
             <router-link to="/about">Диаграмма</router-link>
             <router-link to="/scrollbarplugin">Кастомная полоса прокрутки</router-link>
+            <router-link to="/photo">Фоторез</router-link>
         </div>
     </header>
 </template>

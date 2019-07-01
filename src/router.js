@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Photo from './views/Photo'
 import Home from './views/Home.vue'
 import ScrollBarPlugin from './views/ScrollBarPlugin'
 
@@ -21,6 +22,11 @@ export default new Router({
       path: '/scrollbarplugin',
       name: 'ScrollBarPlugin',
       component: ScrollBarPlugin
+    },
+    { 
+      path: '/photo',
+      name: 'Photo',
+      component: Photo
     },
   ]
 })
