@@ -8,7 +8,7 @@
   </div> 
 </template>
 
-<script>
+<script> 
 // @ is an alias to /src
 import PhotoGame from '../components/PhotoGame'
 import { setTimeout } from 'timers';
